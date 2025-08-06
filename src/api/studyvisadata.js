@@ -8,6 +8,7 @@ import pImg6 from '../images/package/Finland.webp';
 import pImg7 from '../images/package/Sweden.webp';
 import pImg8 from '../images/package/Malta.webp';
 import pImg9 from '../images/package/Slovakia.webp';
+import pImg10 from '../images/package/uk.webp';
 
 import fIcon1 from '../images/flags/Germany.png';
 import fIcon2 from '../images/flags/Netherlands.png';
@@ -18,8 +19,24 @@ import fIcon6 from '../images/flags/Finland.png';
 import fIcon7 from '../images/flags/Sweden.png';
 import fIcon8 from '../images/flags/Malta.png';
 import fIcon9 from '../images/flags/Slovakia.png';
+import fIcon10 from '../images/flags/uk.png';
+
 
 const StudyVisaData = [
+  {
+    title: 'Top Destination for Global Education',
+    country: 'United Kingdom',
+    pImg: pImg10,
+    flag: fIcon10, 
+    highlights: [
+      'Globally Recognized Universities',
+      'Post-Study Work Visa (2 Years)',
+      'Wide Range of Scholarships'
+    ],
+    courseCount: 'Business, Engineering, Health, Arts',
+    description: 'The UK offers prestigious universities, diverse course options, and strong post-study work opportunities for international students.'
+  },
+
   {
     title: 'Top Choice for Engineering & Tech',
     country: 'Germany',

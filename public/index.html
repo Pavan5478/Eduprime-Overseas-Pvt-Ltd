@@ -1,30 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- Basic Meta -->
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Edu.Prime | Immigration & Visa Consulting Experts</title>
+    <!-- Page Title -->
+    <title>EduPrime | Immigration & Visa Consulting Experts</title>
 
-    <!-- Favicon and icons -->
+    <!-- Favicon -->
     <link rel="icon" type="image/png" href="%PUBLIC_URL%/favicon-replance.png" />
     <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
 
-    <!-- Theme and Colors -->
+    <!-- Theme Color for Mobile Browsers -->
     <meta name="theme-color" content="#0056b3" />
 
-    <!-- SEO Meta -->
+    <!-- SEO Meta Tags -->
     <meta name="description" content="Edu.Prime is your trusted partner for global immigration, visa consulting, and relocation solutions. Expert guidance for Canada, USA, UK, and more." />
     <meta name="keywords" content="Immigration, Visa Consulting, Edu Prime, Study Abroad, L1 Visa, EB5 Visa, Work Visa, PR Visa, Relocation, Business Visa" />
     <meta name="author" content="Edu Prime Immigration" />
 
-    <!-- Open Graph -->
+    <!-- Robots (Set to index by default; override dynamically via react-helmet) -->
+    <meta name="robots" content="index, follow" />
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://eduprimeoverseas.com/" />
+
+    <!-- Open Graph / Facebook -->
     <meta property="og:title" content="Edu.Prime | Immigration & Visa Consulting Experts" />
     <meta property="og:description" content="Helping individuals and businesses move globally with confidence. Visa assistance for USA, Canada, UK, and more." />
     <meta property="og:image" content="%PUBLIC_URL%/social-share-image.webp" />
-    <meta property="og:url" content="https://www.eduprime.com" />
+    <meta property="og:url" content="https://eduprimeoverseas.com/" />
     <meta property="og:type" content="website" />
 
     <!-- Twitter Meta -->
@@ -33,35 +41,41 @@
     <meta name="twitter:description" content="Expert visa and immigration solutions for students, professionals, and corporates worldwide." />
     <meta name="twitter:image" content="%PUBLIC_URL%/social-share-image.webp" />
 
-    <!-- Performance Optimizations -->
+    <!-- Preloads -->
     <link rel="preload" href="%PUBLIC_URL%/fonts/YourFont.woff2" as="font" type="font/woff2" crossorigin />
     <link rel="preload" href="%PUBLIC_URL%/images/hero-banner.webp" as="image" />
 
-    <!-- Web Font FOUT Fix -->
+    <!-- Security Best Practices -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data: https:; script-src 'self' 'unsafe-inline' https:; style-src 'self' 'unsafe-inline' https:; font-src 'self' https: data:;" />
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
+
+    <!-- Fix FOUT (Flash of Unstyled Text) -->
     <style>
       html {
         font-display: swap;
       }
     </style>
 
-    <!-- Structured Data (Optional for SEO Boost) -->
+    <!-- Schema.org Structured Data (Organization) -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "Organization",
-      "name": "Edu Prime Immigration",
-      "url": "https://www.eduprime.com",
+      "name": "EduPrime overseas",
+      "url": "https://eduprimeoverseas.com/",
       "logo": "https://www.eduprime.com/logo192.png",
       "sameAs": [
-        "https://www.facebook.com/eduprime",
-        "https://www.instagram.com/eduprime",
-        "https://www.linkedin.com/company/eduprime"
+        "https://www.facebook.com/share/1EyPjQNkM2",
+        "https://www.instagram.com/jostan.uk?igsh=dTdua29qYTJwcjZh",
+        "https://uk.linkedin.com/in/jostan-dsouza-965304117"
       ]
     }
     </script>
   </head>
   <body>
-    <noscript><strong>We're sorry, but Edu.Prime needs JavaScript to work properly. Please enable it in your browser.</strong></noscript>
+    <noscript>
+      <strong>We're sorry, but Edu.Prime needs JavaScript to work properly. Please enable it in your browser.</strong>
+    </noscript>
     <div id="root"></div>
   </body>
 </html>
