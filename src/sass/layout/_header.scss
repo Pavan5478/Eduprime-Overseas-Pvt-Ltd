@@ -1,0 +1,193 @@
+/*----------------------------------------*/
+/*  02. header
+/*----------------------------------------*/
+.header {
+
+    &__action {
+        @include respond(lg) {
+            display: none;
+        }
+
+        &>li {
+            margin-left: 40px;
+            padding-left: 40px;
+            position: relative;
+
+            &:first-child {
+                margin-left: 0;
+            }
+
+            &::before {
+                @include before;
+                background-color: #EDF3F5;
+                width: 1px;
+                height: 34px;
+                top: 50%;
+                @include transform(translateY(-50%));
+            }
+        }
+    }
+
+    &__search {
+        font-size: 14px;
+        font-weight: 600;
+        color: var(--color-dark);
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+
+        &:hover {
+            color: var(--color-dark);
+        }
+
+        img {
+            margin-right: 9px;
+        }
+    }
+
+}
+
+
+// header three
+.header-style-three {
+    position: absolute;
+    top: 46px;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 11;
+
+    @include respond(md) {
+        top: 10px;
+    }
+
+    .main-menu__wrap {
+        background: #fff;
+        padding: 0 60px;
+        box-shadow: 0px 8px 19px rgba(156, 170, 194, 0.09);
+        @include border-radius(67px);
+        margin: 0 auto; // center align block
+
+        display: flex;
+        align-items: center;
+        justify-content: center; // center all children (logo + menu)
+
+        @include respond(laptop) {
+            padding: 0 40px;
+        }
+
+        @include respond(lg) {
+            padding: 0 30px;
+        }
+    }
+
+    .headerlogo {
+        height: 75px; // or whatever looks good for your layout
+        width: auto;
+    }
+
+    .main-menu ul li:not(:last-child) {
+        margin-right: 40px;
+    }
+
+    .main-menu ul li a {
+        position: relative;
+        padding: 23px 0;
+        color: #0F172A;
+        text-decoration: none;
+        display: inline-block;
+        transition: color 0.3s ease;
+        overflow: hidden;
+    }
+
+    .main-menu ul li a::before {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 0%;
+        height: 2px;
+        background-color: #104B83;
+        /* your brand color */
+        transition: width 0.4s ease;
+    }
+
+    .main-menu ul li a:hover::before {
+        width: 100%;
+    }
+
+    .main-menu ul li a:hover {
+        color: #104B83;
+    }
+
+
+    .main-menu>ul>li>a span {
+        padding: 0;
+        border: none;
+        @include border-radius(0);
+    }
+
+    .header__language {
+        padding-left: 100px;
+    }
+
+    .header__action {
+        button {
+            width: 180px;
+            height: 60px;
+            background-color: #fff;
+            @include center;
+            margin-left: 15px;
+            box-shadow: 0px 8px 19px rgba(156, 170, 194, 0.09);
+            @include border-radius(50%);
+
+            img {
+                margin: 0;
+            }
+        }
+    }
+
+    .header__bar-icon {
+        width: 19px;
+        height: 17px;
+        position: relative;
+    }
+
+    .stricked-menu {
+        .main-menu__wrap {
+            box-shadow: none;
+            border: 0;
+        }
+    }
+}
+
+
+.stricked-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    top: 0;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transform: translateY(-100%);
+    visibility: hidden;
+    background-color: var(--color-white);
+
+    .main-menu ul li a {
+        padding: 28px 0;
+    }
+}
+
+.stricked-menu.stricky-fixed {
+    transform: translateY(0);
+    visibility: visible;
+    -webkit-box-shadow: 0 3px 18px rgba(2, 21, 78, 0.09);
+    -khtml-box-shadow: 0 3px 18px rgba(2, 21, 78, 0.09);
+    -moz-box-shadow: 0 3px 18px rgba(2, 21, 78, 0.09);
+    -ms-box-shadow: 0 3px 18px rgba(2, 21, 78, 0.09);
+    -o-box-shadow: 0 3px 18px rgba(2, 21, 78, 0.09);
+    box-shadow: 0 3px 18px rgba(2, 21, 78, 0.09);
+}
