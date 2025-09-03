@@ -61,13 +61,13 @@ const TuristVisaCountry = () => {
                           <img src={pakage.flag} alt={`${pakage.country} flag`} loading="lazy" />
                           <h2 className="xb-item--title">{pakage.country}</h2>
                         </div>
-                        {pakage.tag && (
+                        {/* {pakage.tag && (
                           <div className="xb-course-btn">
                             <button className="btn btn-sm btn-outline-primary">
                               {pakage.tag}
                             </button>
                           </div>
-                        )}
+                        )} */}
                       </div>
                       <p className="xb-item--desc small text-muted mt-2">{pakage.title}</p>
                       <ul className="xb-item--info ul_li_between">
